@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+html,
+body {
+  font-family: "Poppins";
+  font-style: normal;
+  overflow-x: hidden;
+  position: relative;
+}
+
+aside {
+  position: relative;
+  padding: 30px 20px;
+  width: 95%;
+  height: auto;
+  top: 50px;
+  left: 10px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px #eeeeee6e;
+  z-index: 2;
+}
+
+.sidebar-item {
+  text-decoration: none;
+  display: block;
+  background: transparent;
+  height: 46px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 11px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sidebar-item.active {
+  background: #4640de;
+}
+.sidebar-item.active span {
+  color: #fff;
+}
+.sidebar-item.active svg path {
+  stroke: #fff;
+}
+.sidebar-item svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 20px;
+}
+.sidebar-item svg path {
+  stroke: #abb3c4;
+}
+.sidebar-item span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #121f3e;
+}
+
+.col-navbar {
+  transition: 1s;
+}
+
+@media (max-width: 991.98px) {
+  aside {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+  }
+
+  .col-navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 60px;
+    z-index: 99;
+  }
+}
+
+nav {
+  position: fixed !important;
+  width: 100%;
+  background-color: #fff !important;
+  box-shadow: 5px 5px 20px #eeeeee46;
+  border-bottom: 1px solid #eee;
+
+  z-index: 999;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #4640de;
+}
+
+.navbar-nav .nav-link.active {
+  color: #4640de !important;
+}
+
+.dropdown-account .btn-secondary {
+  border: none;
+  background-color: transparent !important;
+  color: #4640de !important;
+  box-shadow: none !important;
+}
+
+.wrapper {
+  margin-top: 80px !important;
+}
+
+input,
+select {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-amount {
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+button {
+  padding: 8px 20px;
+  border: 1px solid #4640de;
+  border-radius: 10px !important;
+  background-color: #4640de;
+  color: #fff;
+}
+
+h2 {
+  color: #4640de !important;
+}
+
+.card {
+  border: 1px solid #eee !important;
+  box-shadow: 5px 5px 20px #eeeeee6e;
+}
+
+.dataTables_filter {
+  float: right;
+}
+
+th:first-of-type {
+  border-top-left-radius: 5px;
+}
+th:last-of-type {
+  border-top-right-radius: 5px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 5px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 5px;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: #ccffff;
+}
+
+thead {
+  background: #ddd;
+}
+
+.table td:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 767.98px) {
+  aside span {
+    display: none;
+  }
+
+  .sidebar-item svg {
+    margin-right: 0;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr,
+  tfoot tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    border: 1px solid #eee !important;
+    position: relative;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .table td:nth-child(1) {
+    background: #f9f9f9;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+  }
+
+  .table > :not(:first-child) {
+    border-top: 1px solid #eee !important;
+  }
+
+  .dataTables_length {
+    display: none;
+  }
+}
+
+.wrapper-nav-tabs {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.wrapper-nav-tabs .nav-link.active {
+  background-color: transparent;
+  border-bottom: 1px solid #dee2e6;
+  font-weight: 600;
+}
+
+.wrapper-nav-tabs .nav-link {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-right: 50px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #222;
+}
+
+.wrapper-nav-tabs form {
+  margin-top: 35px;
+}
+
+.wrapper-nav-tabs .forgot-password {
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4640de;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.form-check span {
+  color: #4640de;
+}
+
+.form-check-label,
+.form-label {
+  color: #777;
+}
+
+.carousel-inner {
+  background-color: #4640de;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 580px;
+  object-fit: contain;
+  object-position: right;
+}
+
+@media (max-width: 991.98px) {
+  .carousel-item img {
+    height: 0;
+    margin-top: 600px;
+  }
+
+  .carousel-caption p {
+    width: 100% !important;
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 30%;
+  bottom: 70%;
+  text-align: left;
+}
+
+.carousel-caption h1 {
+  font-size: 48px;
+}
+
+.carousel-caption p {
+  margin-bottom: 30px;
+  width: 40%;
+}
+
+a.btn-open-acc {
+  padding: 10px 50px;
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+}
+
+a.btn-open-acc button {
+  background-color: transparent;
+  border: none;
+}
+
+.desc-investments h1 {
+  margin-top: 60px;
+  font-weight: 600;
+  color: #4640de;
+}
+
+.desc-investments p {
+  color: #999;
+}
+
+.wrapper-card-investments {
+  display: flex;
+}
+
+.card-investments {
+  border: none;
+}
+
+.card-investments img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-investments h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #777;
+}
+
+.card-investments p {
+  color: #999;
+}
+
+.card-data {
+  margin: 10px 0;
+  padding: 10px 20px;
+  width: 95%;
+}
+
+.card-data h1 {
+  font-size: 18px;
+}
+
+.card-data span {
+  color: #999;
+}
+
+.wrapper-col-data {
+  margin-top: 60px;
+  display: flex;
+}
+
+.col-data {
+  margin: 0;
+}
+
+.col-data02 {
+  display: flex;
+}
+
+.col-data02 .card-data02 {
+  border: none;
+}
+
+.col-data02 .card-data02 h1 {
+  font-size: 24px;
+}
+
+.col-data02 .card-data02 p {
+  color: #999;
+}
+
+.col-data02 img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: left;
+}
+
+@media (max-width: 575.98px) {
+  .col-data02 .row {
+    justify-content: center;
+  }
+}
+
+.desc-trading h1 {
+  font-size: 24px;
+  color: #222;
+}
+
+.desc-trading p {
+  color: #999;
+}
+
+.desc-trading span {
+  font-size: 16px;
+  color: #4640de;
+}

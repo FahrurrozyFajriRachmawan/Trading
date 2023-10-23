@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- Data Table CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css"
+    />
+
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
+
+    <title>Trading</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid px-5 py-3">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="#">Plans</a>
+            <a class="nav-link" href="my-order.html">Dashboard</a>
+            <a class="nav-link" href="#">Refferal</a>
+            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#">Faq</a>
+
+            <a href="index.html">
+              <button>Login</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="wrapper">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/header.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h1>Cashback</h1>
+              <p>
+                Get cashback for trading, topping up, and many other common
+                account operations.
+              </p>
+              <a href="loginRegister.html" class="btn-open-acc">
+                <button type="submit">Open account</button>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/header.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h1>Cashback</h1>
+              <p>
+                Get cashback for trading, topping up, and many other common
+                account operations.
+              </p>
+              <a href="loginRegister.html" class="btn-open-acc">
+                <button type="submit">Open account</button>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/header.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h1>Cashback</h1>
+              <p>
+                Get cashback for trading, topping up, and many other common
+                account operations.
+              </p>
+              <a href="loginRegister.html" class="btn-open-acc">
+                <button type="submit">Open account</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="row desc-investments">
+          <h1>Investments</h1>
+          <p>
+            The PAMM account service allows you earn on the Forex market without
+            having to make trades yourself; by investing in the accounts of
+            experienced traders
+          </p>
+        </div>
+        <div class="row text-center wrapper-card-investments">
+          <div class="card-investments col col-lg-4 col-md-4 col-12 p-5">
+            <img src="./assets/img/active-investror.png" alt="" />
+            <h1>60,000</h1>
+            <p>active investors</p>
+          </div>
+          <div class="card-investments col col-lg-4 col-md-4 col-12 p-5">
+            <img src="./assets/img/open-for-investment.png" alt="" />
+            <h1>4,000</h1>
+            <p>PAMM-accounts open for investment</p>
+          </div>
+          <div class="card-investments col col-lg-4 col-md-4 col-12 p-5">
+            <img src="./assets/img/by-one-investor.png" alt="" />
+            <h1>183,000 USD</h1>
+            <p>ROI achieved by one investor</p>
+          </div>
+        </div>
+
+        <div class="row wrapper-col-data">
+          <div class="col col-data col-12 col-lg-4 col-md-8">
+            <div class="card card-data">
+              <h1>1. Moriarti</h1>
+              <span>610,519</span>
+            </div>
+            <div class="card card-data">
+              <h1>2. Seeandinvest132</h1>
+              <span>4,641%</span>
+            </div>
+            <div class="card card-data">
+              <h1>3. Seeandinvest208</h1>
+              <span>2,526%</span>
+            </div>
+            <div class="card card-data">
+              <h1>4. Gemmaster</h1>
+              <span>42,865%</span>
+            </div>
+            <div class="card card-data">
+              <h1>5. Magn</h1>
+              <span>2,313%</span>
+            </div>
+          </div>
+          <div
+            class="col col-data02 col-12 col-lg-8 col-md-4 text-center justify-content-center"
+          >
+            <div class="row">
+              <div class="card-data02 pt-3" style="width: 16rem">
+                <p>Return (1 month)</p>
+                <h1>3%</h1>
+              </div>
+              <div class="card-data02 pt-3" style="width: 16rem">
+                <p>Overall return</p>
+                <h1>610,519%</h1>
+              </div>
+              <div class="card-data02 pt-3" style="width: 16rem">
+                <p>Equity</p>
+                <h1>4,167,687 USD</h1>
+              </div>
+              <div class="card-data02" style="width: 16rem">
+                <img src="./assets/img/trading-view.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container desc-trading">
+        <div class="row mt-4">
+          <p>
+            Today, Alpari is one of the world’s largest Forex brokers. Thanks to
+            the experience that the company has acquired with years of work,
+            Alpari is able to offer its clients a broad spectre of quality
+            services for modern-age Internet trading on the foreign exchange
+            currency market. More than a million clients have chosen Alpari as
+            their trusted provider of Forex services.
+          </p>
+          <h1>What is Forex?</h1>
+          <p>
+            The Forex (FOReign EXchange) market appeared at the end of the 1970s
+            after many countries decided to unpeg their currency value from that
+            of the US dollar or gold. This led to the formation of an
+            international market on which currency could be exchanged and traded
+            freely. Today, Forex is the largest financial market in the world.
+            It doesn’t matter where you live or even where you are right now; as
+            long as you have access to the Internet, a trading terminal (a
+            special program for trading Forex), and an account with a Forex
+            broker, all the instruments and opportunities of Forex are available
+            to you.
+          </p>
+          <h1>Who are traders?</h1>
+          <p>
+            Traders are people who work on the Forex market, trying to ascertain
+            the direction in which the value of a currency will go and make a
+            trade for the purchase or sale of that currency. As such, by buying
+            a currency cheaper and selling it for more, traders earn money on
+            the Forex market. Traders make their decisions based on the analysis
+            of all factors that can affect prices; allowing them to work out
+            precisely in which direction prices are moving. You can make a
+            profit on the Forex market when the value of a currency drops as
+            well as when it increases. Furthermore, traders can make trades on
+            the Forex market from anywhere in the world; from London to
+            Timbuktu.
+          </p>
+          <h1>Where can I learn how to trade Forex?</h1>
+          <p>
+            For novices who have just taken their first steps onto the Forex
+            market, we recommend enrolling on one of our educational courses.
+            The courses will teach you not only the basics of the foreign
+            exchange market, but also methods of analysing it and how to avoid
+            common pitfalls. With education from Alpari, you will gain valuable
+            theoretical knowledge which you will be able to apply when trading.
+            Moreover, you will find out about money management, learn to keep
+            your emotions under control, discover how trading robots can be
+            useful, and much more. You can take part in our courses online from
+            the comfort of your own home.
+          </p>
+          <h1>How can I get started trading Forex?</h1>
+          <span> Open an account </span>
+          <p>
+            If you have never worked with Forex before, you can get acquainted
+            with the ins and outs of currency trading on a demo account with
+            virtual funds. With a demo account, you'll be able to explore the
+            Forex market from within and develop your own trading strategy.
+          </p>
+          <span> Download the trading terminal </span>
+          <p>
+            After you have opened an account, whether it be a demo or live
+            account, you will need to download MetaTrader; a special program for
+            trading on the Forex market. In the terminal, you can keep track of
+            market quotes, make trades by opening and closing positions, and
+            stay up to date with financial news. The terminal is available on PC
+            as well as on mobile devices.
+          </p>
+          <span> Top up your account and start trading </span>
+          <p>
+            With Alpari, you can start trading on the Forex market with any
+            amount of funds on your account. If you would like to try trading
+            Forex on a live account, but you'd also like to keep risk to a
+            minimum, try trading with a nano.mt4 account, where currency is
+            traded in eurocents and US dollar cents.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-lg-start bg-light text-muted mt-5">
+      <section class="py-3">
+        <div class="container text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem"></i>Company name
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+                harum ab dolorem eaque quidem quia libero sunt exercitationem
+                commodi id?
+              </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Resources</h6>
+              <p>
+                <a href="#!" class="text-reset">Refferal</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Faq</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Review</a>
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-geo-alt"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+                  />
+                  <path
+                    d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                </svg>
+                Kenya, 10012
+              </p>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                  />
+                </svg>
+                info@example.com
+              </p>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telephone"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+                + 254 234 567 88
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2023 Copyright
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Data Table JS -->
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- My JS -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
