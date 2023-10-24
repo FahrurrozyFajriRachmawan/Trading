@@ -427,3 +427,43 @@ a.btn-open-acc button {
   font-size: 16px;
   color: #4640de;
 }
+
+.about-us {
+  margin: 120px 30px 50px 30px !important;
+}
+
+.about-us h1 {
+  font-size: 32px;
+  color: #222;
+}
+
+.about-us p {
+  color: #999;
+}
+
+.about-us img {
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about-us-title p,
+.about-us-desc p {
+  text-align: justify;
+}
+
+.faq {
+  margin: 120px 30px 50px 30px !important;
+}
+
+.accordion-button:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+}

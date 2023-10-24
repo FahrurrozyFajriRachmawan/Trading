@@ -53,186 +53,120 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="plans.html">Plans</a>
             <a class="nav-link" href="my-order.html">Dashboard</a>
             <a class="nav-link" href="#">Refferal</a>
-            <a class="nav-link" href="about-us.html">About Us</a>
+            <a class="nav-link active" href="about-us.html">About Us</a>
             <a class="nav-link" href="faq.html">Faq</a>
+            <div class="dropdown dropdown-account">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                example@mail.com
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Account Settings</a></li>
+                <li>
+                  <a class="dropdown-item" href="loginRegister.html"
+                    >Sign Out</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </nav>
 
     <!-- Main -->
-    <div class="container wrapper-nav-tabs">
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button
-          class="nav-link active"
-          id="nav-login-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-login"
-          type="button"
-          role="tab"
-          aria-controls="nav-login"
-          aria-selected="true"
-        >
-          Login
-        </button>
-        <button
-          class="nav-link"
-          id="nav-profile-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#nav-profile"
-          type="button"
-          role="tab"
-          aria-controls="nav-profile"
-          aria-selected="false"
-        >
-          Register
-        </button>
-      </div>
-      <div class="tab-content" id="nav-tabContent">
-        <div
-          class="tab-pane fade show active"
-          id="nav-login"
-          role="tabpanel"
-          aria-labelledby="nav-login-tab"
-          tabindex="0"
-        >
-          <!-- Form Login -->
-          <div class="row">
-            <div class="col-12 col-lg-6 col-md-12">
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Email address</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="name@example.com"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"
-                    >Password</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                  />
-                </div>
-                <div class="mb-3 form-check pt-4">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <label class="form-check-label" for="exampleCheck1"
-                    >Reminder me</label
-                  >
-                </div>
-              </form>
-              <a
-                href="index.html"
-                class="btn-login"
-                style="text-decoration: none"
-              >
-                <button type="submit">Login</button>
-              </a>
-              <a href="loginRegister.html" class="forgot-password px-4">
-                Forgot your password?
-              </a>
+    <div class="wrapper">
+      <div class="container-fluid about-us">
+        <div class="row about-us">
+          <div class="row about-us-title">
+            <div class="col col-lg-3 col-12">
+              <h1>About Us</h1>
+            </div>
+            <div class="col col-lg-9 col-12">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis nam mollitia sapiente deserunt quos voluptatibus
+                tempore rem error nihil natus suscipit voluptates totam expedita
+                sunt, minus aut tenetur, veniam repudiandae.
+              </p>
+            </div>
+            <img src="./assets/img/about-us.jpg" alt="" />
+          </div>
+
+          <div class="row about-us-statistic text-center mt-3">
+            <div class="col col-lg-4 col-md-4 col-sm-4 col-12 py-2">
+              <h4>500+</h4>
+              <p>Active Member</p>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-4 col-12 py-2">
+              <h4>1000K+</h4>
+              <p>Total Deposited</p>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-4 col-12 py-2">
+              <h4>20M+</h4>
+              <p>Total Withdraw</p>
             </div>
           </div>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="nav-profile"
-          role="tabpanel"
-          aria-labelledby="nav-profile-tab"
-          tabindex="0"
-        >
-          <!-- Form Register -->
-          <div class="row">
-            <div class="col-12 col-lg-6 col-md-12">
-              <form>
-                <div class="row">
-                  <div class="col-12 col-lg-6 col-md-6">
-                    <div class="mb-3">
-                      <label for="exampleInputText" class="form-label"
-                        >Name</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleInputText"
-                        placeholder="William"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label"
-                        >Email address</label
-                      >
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        placeholder="name@example.com"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6 col-md-6">
-                    <div class="mb-3">
-                      <label for="exampleInputText2" class="form-label"
-                        >Surname</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleInputText2"
-                        placeholder="Stephen"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputNumber" class="form-label"
-                        >Telephone number</label
-                      >
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="exampleInputNumber"
-                        placeholder="+7"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-3 form-check pt-4">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck2"
-                  />
-                  <label class="form-check-label" for="exampleCheck2">
-                    I accept the terms of the
-                    <span>Client Agreement</span> and
-                    <span>Data Transfer Policy</span> and agree to the
-                    processing of my personal data. I hereby confirm that I am
-                    at least 18 years old.
-                  </label>
-                </div>
-                <a href="index.html">
-                  <button type="submit">Continue</button>
-                </a>
-              </form>
-            </div>
+
+          <div class="row about-us-desc mt-3">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
+              ab, at omnis ipsa exercitationem ad nisi incidunt quis iste
+              aspernatur ut consequuntur aperiam beatae pariatur, aliquid
+              molestias. Voluptas repudiandae, quas eligendi incidunt est illo
+              nobis, quidem exercitationem saepe aliquam porro.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni,
+              cupiditate quo nesciunt cum possimus corporis recusandae animi
+              consectetur deleniti eius, harum saepe. Soluta commodi suscipit
+              illo debitis qui deserunt, illum voluptatem, aliquid voluptates
+              error eaque! Suscipit in ducimus accusamus impedit?
+            </p>
           </div>
         </div>
       </div>
+
+      <!-- <div class="container">
+        <div class="row text-center">
+          <div class="col col-lg-4 col-12">
+            <h4>500+</h4>
+            <p>Active Member</p>
+          </div>
+          <div class="col col-lg-4 col-12">
+            <h4>1000K+</h4>
+            <p>Total Deposited</p>
+          </div>
+          <div class="col col-lg-4 col-12">
+            <h4>20M+</h4>
+            <p>Total Withdraw</p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="container mt-5">
+        <div class="row text-center">
+          <div class="col col-lg-4 col-12">
+            <h3>Get In Touch With Us</h3>
+          </div>
+          <div class="col col-lg-4 col-12">
+            <strong>Email Address</strong>
+            <p>info@example.com</p>
+          </div>
+          <div class="col col-lg-4 col-12">
+            <strong>Our Location</strong>
+            <p>Kenya, 10012</p>
+          </div>
+        </div>
+      </div> -->
     </div>
 
     <!-- Footer -->
